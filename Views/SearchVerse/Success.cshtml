@@ -1,0 +1,57 @@
+﻿@model BibleVerseApplication.Models.BibleVerse
+
+@{
+    ViewBag.Title = "Success";
+}
+
+<h2>Success</h2>
+
+<div>
+    <h4>BibleVerse</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Testiment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Testiment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Book)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Book)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Chapter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Chapter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Verse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Verse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Text)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Text)
+        </dd>
+
+    </dl>
+</div>
+<p>   
+    @Html.ActionLink("Back to List", "Index")
+</p>
